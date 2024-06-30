@@ -2,8 +2,40 @@
 <!-- Set up HTML. -->
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Coding Challenge 14</title>
+    <head>
+        <title>Coding Challenge 14</title>
         <meta charset="UTF-8">
-        <!-- Link to script.js. -->
-        <script src="script.js"></script></head>
+    </head>
+    <body>
+        <h2>Economics Calculator</h2>
+        <!-- Link to javaScript. -->
+        <script type="module" src="js/main.js"></script>
+
+        <div>
+            <h3>Inputs</h3>
+            <input type="number" name="principal" id="principal" placeholder="Principal">
+            <input type="number" name="rate" id="rate" placeholder="Rate">
+            <input type="number" name="time" id="time" placeholder="Time">
+            <input type="number" name="n" id="n" placeholder="n">
+        </div>
+        
+        <div>
+            <h3>Interest Rate</h3>
+            <button id="calcInterestRateBtn">Calculate Interest Rate</button>
+            <p id="interestRateResult"></p>
+        </div>
+
+        <div>
+            <h3>Loan Payment</h3>
+            <button id="calcLoanPaymentBtn">Calculate Loan Payment</button>
+            <p id="loanPaymentResult"></p>
+        </div>
+
+        <div>
+            <h3>Investment Return</h3>
+            <button id="calcInvestmentReturnBtn">Calculate Investment Return</button>
+            <p id="investmentReturnResult"></p>
+        </div>
+
+    </body>
 </html>
